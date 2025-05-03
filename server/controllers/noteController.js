@@ -26,16 +26,6 @@ class NoteController {
       return res.status(500).json({success:false});
     }
   }
-
-  static async updateNote(req,res) {
-    try {
-      const {id, note} = req.body;
-      const updatedNote = await Note.findByIdAndUpdate(id, note);
-      return res.status(200).json({note:updatedNote,success:true});
-    } catch (error) {
-      return res.status(500).json({success:false});
-    }
-  }
   static async deleteNote(req,res) {
     try {
       const {id} = req.params;
