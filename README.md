@@ -2,6 +2,21 @@
  Catfact Notes App
 A simple MERN stack (MongoDB, Express, React, Node.js) note-taking app that assigns a random cat fact to each note created.
 
+Clone the Repository
+
+git clone https://github.com/sanoj-chaudhary/cat-fact-note.git
+cd cat-fact-note
+
+Start the Backend
+cd server
+npm install
+node app.js
+
+Start the Frontend
+cd client
+npm install
+npm start
+
 ✨ Features
 Create notes with title and content.
 
